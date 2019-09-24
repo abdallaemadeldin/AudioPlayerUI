@@ -2,19 +2,12 @@ import React, { Component } from 'react';
 import {
     StatusBar,
     View,
-    Animated,
     ImageBackground,
     Text
 } from 'react-native';
 import { style } from './style';
 
-type Props = {
-    source: Image,
-    cdTitle: String,
-    cdSubTitle: String
-}
-
-class CD extends Component<Props> {
+class CD extends Component {
 
     circles = Array(3);
 

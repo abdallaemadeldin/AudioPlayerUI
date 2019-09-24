@@ -144,7 +144,7 @@ export const style = StyleSheet.create({
 });
 
 function Resizer(precent) {
-    const deviceHeight = isIPHONEX ? height - 78 : isANDROID ? height - StatusBar.currentHeight: height;
+    const deviceHeight = isIPHONEX ? height - 78 : isANDROID ? height - StatusBar.currentHeight : height;
     const size = (precent * deviceHeight) / 100;
     return Math.round(size);
 }

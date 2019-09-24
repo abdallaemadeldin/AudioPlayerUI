@@ -1,23 +1,13 @@
 import React, { Component } from 'react';
-import {
-    StatusBar,
-    SafeAreaView,
-    View,
-    Text,
-    TouchableOpacity
-} from 'react-native';
+import { StatusBar, SafeAreaView, View, Text, TouchableOpacity } from 'react-native';
 import { style } from './style';
 import CD from './CD';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Slider from '@react-native-community/slider';
 
-type Props = {
+class Player extends Component {
 
-}
-
-class Player extends Component<Props> {
-
-    constructor(props){
+    constructor(props) {
         super(props);
 
         this.state = {
@@ -66,9 +56,7 @@ class Player extends Component<Props> {
             <SafeAreaView style={container} >
                 <StatusBar hidden animated />
 
-                {
-                    this.circleGenerator(15)
-                }
+                {this.circleGenerator(15)}
 
                 <CD
                     cdTitle="CairoKee"
